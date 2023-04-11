@@ -17,13 +17,9 @@ class Solution(object):
         for i in tmp:
                 sentence += i[1] + " "
         return sentence.strip()
-    
-        
 
 if __name__ == "__main__":
     test = Solution()
-    #dics = {"1":"HELLO", "2":"WELCOME", "4":"HOME", "3": "RISE"}
-    #print(dics["1"])
     ans = test.sortSentence("This1 not3 sentence4 is2")
     print(ans)
 
