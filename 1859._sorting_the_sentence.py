@@ -17,10 +17,13 @@ class Solution(object):
         for i in tmp:
                 sentence += i[1] + " "
         return sentence.strip()
-
+    def best_solut(self, s):
+        return ' '.join([w[:-1] for w in sorted(s.split(),key=lambda x:x[-1])])
+         
 if __name__ == "__main__":
     test = Solution()
     ans = test.sortSentence("This1 not3 sentence4 is2")
-    print(ans)
+    ans2 = test.best_solut("This1 not3 sentence4 is2")
+    print(ans2)
 
     
